@@ -1,12 +1,14 @@
+import java.util.Scanner;
 public class IfElseExample {
     public static void main(String[] args) {
-
-        int age = 20;
-
-        if (age >= 18) {
-            System.out.println("You are eligible to vote.");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your mark: ");
+        int mark = scanner.nextInt();
+        if (mark >= 40) {
+            System.out.println("You passed the exam.");
         } else {
-            System.out.println("You are not eligible to vote.");
+            System.out.println("You failed the exam.");
         }
+        scanner.close();
     }
 }
