@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+public class Fibonacci{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of terms: ");
+        int terms = scanner.nextInt();
+        int first = 0;
+        int second = 1;
+        for (int count = 1; count <= terms; count++) {
+            System.out.print(first + " ");
+            int next = first + second;
+            first = second;
+            second = next;
+        }
+        scanner.close();
+    }
+}
