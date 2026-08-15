@@ -1,4 +1,3 @@
-package Partice_problem;
 
 public class sumEven {
     public static void main(String[] args){
