@@ -1,4 +1,4 @@
-public class ArraySorting {
+public class BubbleSort {
     public static void main(String[] args) {
         int[] numbers = {40, 10, 30, 20, 50};
         for (int pass = 0; pass < numbers.length - 1; pass++) {
